@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>安徽省网上投诉平台</title>
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="target-densitydpi=320,width=1920,user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+
+<!-- ç»ä¸æ ·å¼ -->
+<link href="/pl-ws-web/resources/js/plugins/flyui/css/flyui.css" rel="stylesheet" />
+<link rel="stylesheet" href="/pl-ws-web/resources/css/base.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+<link rel="stylesheet" href="/pl-ws-web/resources/css/site.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+<link rel="stylesheet" href="/pl-ws-web/resources/css/common.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+<link rel="stylesheet" href="/pl-ws-web/resources/css/online/common.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+<link rel="stylesheet" href="/pl-ws-web/resources/css/workflow.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+<link rel="shortcut icon" href="/pl-ws-web/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="" id="fontSizeBig" />
+<script>
+    var CONTEXTPATH = "/pl-ws-web";
+    var csrf_token = "035F9F4807396E09D8BE2BA7F264A316F3CA7625D8302AD720E597ACF3D83054";
+    var token = "035F9F4807396E09D8BE2BA7F264A316F3CA7625D8302AD720E597ACF3D83054";
+    var UAAC_CONTEXT = "";
+    var UAAC_LOGOUT = "";
+</script>
+
+<script>
+
+	// è¯¥æ¹æ³å¤çç»ä¸çcodeåæ°ï¼å¨å±åéä¿å­ï¼å¤ä¸ªæ¥å£éè¦
+	
+
+</script>
+
+
+<link rel="stylesheet" 
+    href="/pl-ws-web/resources/js/plugins/workflow/workflow.css;jsessionid=0F8FCC52DFBD2E6A1108983F6FDA0046" />
+</head>
+<body>
+    <!-- 我要查询-案例查询 -->
+	<div class="page-wrap">
+        <div class="wrap-body">
+            <!-- 系统头部 -->
+             
+<!-- 系统头部 -->
+<div class="sys-header">
+    <!-- 系统log，这里使用图片实现 -->
+    <div class="sys-log">
+        <span class="log-name fl"><em id="cityName"></em>网上信访投诉平台</span>
+        <span class="log-english fl"><span>Online complaint platform in </span><em id="cityPing"></em></span>
+    </div>
+    <!-- 系统导航 -->
+    <div class="sys-navWrap">
+        <div class="nav-node nav-noBg" data-url="/pl-ws-web/index.do?navIndex=1">
+            <span class="nav-node0">首页</span>
+        </div>
+        <div class="nav-node" data-url="/pl-ws-web/letterGuide/policyList.do?navIndex=2">
+            <span class="nav-node3">信访指南</span>
+        </div>
+        <div class="nav-node">
+            <span class="nav-node1">网上投诉</span>
+            <div class="node-child hide">
+                <div class="child-node" data-url="/pl-ws-web/onlineComplaint/wantComplaint.do?navIndex=3-1">
+                    <span class="child-span">我要投诉</span>
+                </div>
+                <div class="child-node" data-url="/pl-ws-web/onlineComplaint/caseDisclosure.do?navIndex=3-2">
+                    <span class="child-span">案例公开</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-node">
+            <span class="nav-node2">意见征集</span>
+            <div class="node-child hide">
+                <div class="child-node" data-url="/pl-ws-web/peopleOpinions/caseDisclosure.do?navIndex=4-1">
+                    <span class="child-span">人民意见</span>
+                </div>
+                <div class="child-node" data-url="/pl-ws-web/solicitOpinions/themeList.do?navIndex=4-2">
+                    <span class="child-span">征集意见</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-node">
+            <span class="nav-node4">我要查询</span>
+            <div class="node-child hide">
+                <div class="child-node" data-url="/pl-ws-web/wantInquire/letterInquire.do?navIndex=5-1">
+                    <span class="child-span">信访件查询</span>
+                </div>
+                <div class="child-node" data-url="/pl-ws-web/wantInquire/peopleAdviseList.do?navIndex=5-2">
+                    <span class="child-span">人民建议查询</span>
+                </div>
+                <div class="child-node" data-url="/pl-ws-web/wantInquire/caseSearchList.do?navIndex=5-3">
+                    <span class="child-span">案例查询</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- 系统中间部分 -->
+            <div id="wstsAlfxWrap" class="sys-body">
+                
+	
+		<div class="location-wrap">
+			<span class="position">当前位置：</span><span class="location-name">我要查询</span>&gt;<span class="location-name">案例查询</span>
+		</div>
+	
+	
+
+                <!-- 查询区域 -->
+                <div class="page-form">
+                    <div class="form-left">
+                        <div class="left-arrow"></div>
+                        <div class="left-bottom">案例公开</div>
+                    </div>
+                    <div class="form-body">
+                        <div class="col-xs-6">
+                            <div class="form-control">
+                                <span class="label">
+                                    <label>投诉内容</label>
+                                </span>
+                                <input type="text"
+                                       name="tsnr"
+                                       data-role="textbox">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-control drop-down">
+                                <span class="label">
+                                    <label>内容分类</label>
+                                </span>
+                                <input type="text" data-role="dropdownlist" data-text-field="name" data-value-field="code" data-checkboxes="false" name="nrfldm" data-bind="source: nrflDs,value:nrfl" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-control drop-down">
+                                <span class="label">
+                                    <label>问题属地</label>
+                                </span>
+                                <div class="col-xs-6 pdr9">
+                                    <input type="text"
+                                           data-role="dropdownlist"
+                                           data-option-label="请选择" 
+                                           id="province" 
+                                           data-text-field="mc" 
+                                            data-value-field="dm"
+                                           data-bind="source: provinceSource, value: province"/>
+                                </div>
+                                <div class="col-xs-6 pdl9">
+                                    <input type="text"
+                                           data-role="dropdownlist"
+                                           id="city" 
+                                           data-option-label="请选择" 
+                                           data-text-field="mc" 
+                                           data-value-field="dm"
+                                           data-bind="source: citySource, value: city"
+                                           data-auto-bind="false"
+                                           data-cascade-from="province"
+                                           data-cascade-from-field="dm"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-control">
+                                <span class="label">
+                                    <label>投诉时间</label>
+                                </span>
+                                <div class="date-wrap">
+                                    <div class="col-xs-6 pdr9">
+                                        <input type="text"
+                                               id="startDate"
+                                               data-role="datepicker"
+                                               data-max-date="#endDate"
+                                               name="djsjStartTime"
+                                               data-format="yyyy-MM-dd"/>
+                                    </div>
+                                    <div class="col-xs-6 pdl9">
+                                        <input type="text"
+                                               id="endDate"
+                                               data-role="datepicker"
+                                               data-min-date="#startDate"
+                                               name="djsjEndTime"
+                                               data-format="yyyy-MM-dd"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn btn-cx" data-bind="click: formQuery">查询</div>
+                    <div class="form-btn btn-ts" data-bind="click: addComplain">投诉</div>
+                </div>
+
+                <!-- 列表区域 -->
+                <div class="div-wrap page-list">
+                    <table class="grid-table" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th width="80">序号</th>
+                            <th width="140"><span class="sort sort-down" data-bind="click: sortDownUpClick, css: {sort-up: sortDownUpFlag}">投诉时间</span></th>
+                            <th>投诉内容</th>
+                            <th width="100">投诉人姓名</th>
+                            <th width="220">内容分类</th>
+                            <th width="180">问题属地</th>
+                            <th width="100">状态</th>
+                            <th width="100">操作</th>
+                        </tr>
+                        </thead>
+                        <!-- 表格主体展示部分 -->
+                        <tbody data-bind="source: list"
+                               data-template="gridItemFrist">
+                        </tbody>
+                    </table>
+                    <!-- 分页展示区域 -->
+                    <div data-role="pagination" data-bind="source: list"></div>
+                </div>
+            </div>
+            <!-- 系统脚部 -->
+             
+<!-- 系统脚部 -->
+<div class="sys-footer">
+    <span class="link-wrap fl"><div class="link-log"></div>相关链接</span>
+    <span class="link-down fl">安徽省人民政府门户网站<div class="down-icon"></div>
+    	<div class="link-open" 
+    		data-bind="source: linkList" 
+    		data-template="linkListTemp">
+    	</div>
+    </span>
+    <div class="cnzz-tj">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1272843446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272843446%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+        <style>
+            .cnzz-tj{
+                text-align: center;
+                width: 50px;
+                float: left;
+                margin-left: 10px;
+                margin-top: 4px;
+            }
+        </style>
+    </div>
+    <span class="info-tel">技术支持：<span id="infoTel"></span></span>
+    <span class="link-bq fr" style="width:320px;text-align:right;">主办单位 中共安徽省委信访局  安徽省人民政府信访局&nbsp;&nbsp;</span>
+</div>
+
+<script type="text/html" id="linkListTemp">
+    {{each $data as obj i}}
+        <div class="down-list ell" 
+            data-bind="click: frindLinkClick" 
+            title="{{obj.text}}">{{obj.text}}</div>
+    {{/each}}
+</script>
+        </div>
+        
+    </div>
+</body>
+
+
+<script src="/pl-ws-web/resources/js/plugins/require-2.1.11.js" 
+    data-main="/pl-ws-web/resources/js/apps/pages/wantInquire/caseSearchList.js"></script>
+
+<!-- 一级菜单模板  BEGIN -->
+<script type="text/html" id="systemNodeTemp">
+    {{each $data as item i}}
+        <div class="system-node system-node{{i}}" 
+            data-bind="click: linkToChildSystem">{{item.name}}</div>
+    {{/each}}
+</script>
+<!-- 一级菜单模板 END -->
+
+<script id="gridItemFrist" type="text/html">
+    {{each $data as obj i}}
+    <tr>
+        <td>{{obj._index}}</td>
+        <td>
+            <div class="list-div table-div">
+                <span class="span">
+                    <span class="list-blod">{{obj.djsj | tssjDayHelper}}</span>
+                    <span class="time-min">{{obj.djsj | tssjMinHelper}}</span>
+                </span>
+            </div>
+        </td>
+        <td>
+            <div class="list-div list-text ell-2" 
+                title="{{obj.tsnr}}">{{obj.tsnr}}</div>
+        </td>
+        <td title="{{obj.lfrxm}}"><div class="ell">{{obj.lfrxm}}</div></td>
+        <td title="{{obj.nrflmc}}"><div class="ell">{{obj.nrflmc}}</div></td>
+        <td title="{{obj.wtsdmc}}"><div class="ell">{{obj.wtsdmc}}</div></td>
+        <td title="已办结"><div class="ell">已办结</div></td>
+        <td>
+            <span class="opt-detail"
+                data-bind="click: listDetail"
+                title="查看">查看
+            </span>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+
+
+</html>

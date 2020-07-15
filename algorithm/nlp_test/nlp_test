@@ -1,0 +1,9 @@
+from fastNLP.io import ChnSentiCorpLoader
+
+
+loader = ChnSentiCorpLoader()
+data_dir = loader.download()
+
+
+data_bundle = loader.load(r"D:\study\machine-learning\algorithm\nlp_test\data\dataset\chn_senti_corp")
+print(data_bundle.get_dataset('train'))
